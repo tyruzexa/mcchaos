@@ -1,0 +1,6 @@
+chaos_path: "~/mcchaos/" ### Or wherever you want this to go
+cweb_root: "/var/www" ### or whrever your web server lives who can process python CGI
+cuser: "######" ## Enter the usermane
+cpass: "######" ## and the password
+cserverid: "##############" ## and the ID of the sever to randomize
+cserver: "##############"  ## and the address of the server to randomize

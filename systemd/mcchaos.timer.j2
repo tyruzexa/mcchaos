@@ -1,0 +1,11 @@
+[Unit]
+Description=Trigger for Chaos Mode
+Requires=mcchaos.service
+
+[Timer]
+Unit=mcchaos.service
+OnUnitActiveSec=10
+
+
+[Install]
+WantedBy=timers.target

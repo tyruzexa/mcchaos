@@ -1,0 +1,13 @@
+[Unit]
+Description=Setup mcchaos
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/bash {{chaos_path}}/calctoken.sh
+RemainAfterExit=true
+ExecStop=/usr/bin/bash {{chaos_path}}/calctoken.sh stop
+StandardOutput=journal
+EnvironmentFile={{chaos_path}}/env.conf
+
+[Install]
+WantedBy=multi-user.target

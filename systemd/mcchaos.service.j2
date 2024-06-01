@@ -1,0 +1,19 @@
+[Unit]
+Description=Turn on Chaos Mode
+Requires=mcchaossetup.service
+After=mcchaossetup.service
+
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/bash {{chaos_path}}/mccmd.sh
+WorkingDirectory={{chaos_path}}
+EnvironmentFile={{chaos_path}}/env.conf
+EnvironmentFile={{chaos_path}}/token.env
+
+
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

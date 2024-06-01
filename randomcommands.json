@@ -1,0 +1,1216 @@
+[
+  {
+    "subtitle": "Summon Giant",
+    "title": "summon",
+    "command": [
+      "execute at @a run summon giant ~5 ~ ~"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Kill Everything",
+    "title": "kill",
+    "command": [
+      "kill @e"
+    ],
+    "color": "red"
+  },
+  {
+    "subtitle": "Levitation Effect",
+    "title": "effect",
+    "command": [
+      "effect clear @a",
+      "effect give @a minecraft:levitation !RANDOM 1"
+    ],
+    "color": "dark_aqua"
+  },
+  {
+    "subtitle": "Fill with Diamond Blocks",
+    "title": "fill",
+    "command": [
+      "execute at @a run fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:diamond_block",
+      "execute at @a run fill ~-1 ~-6 ~-1 ~6 ~1 ~1 minecraft:air"
+    ],
+    "color": "blue"
+  },
+  {
+    "subtitle": "Summon Creeper near Ender Dragons",
+    "title": "summon",
+    "command": [
+      "execute as @e[type=ender_dragon] at @s run summon creeper ~ ~ ~"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Teleport Player Eastward",
+    "title": "teleport",
+    "command": [
+      "execute as @p run tp @p ~100 ~ ~"
+    ],
+    "color": "gold"
+  },
+  {
+    "subtitle": "Invisibility for Non-Player Entities",
+    "title": "effect",
+    "command": [
+      "execute at @p run execute as @e[type=!player] at @s run effect give @s minecraft:invisibility !RANDOM 1"
+    ],
+    "color": "dark_aqua"
+  },
+  {
+    "subtitle": "Clone Blocks",
+    "title": "clone",
+    "command": [
+      "execute at @p run clone ~-10 ~-10 ~-10 ~10 ~10 ~10 ~-20 ~-20 ~-20"
+    ],
+    "color": "white"
+  },
+  {
+    "subtitle": "Summon Fireball for Players",
+    "title": "summon",
+    "command": [
+      "execute as @a at @s run summon minecraft:fireball ~ ~1 ~ {ExplosionPower:10}"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Summon Ender Dragon",
+    "title": "summon",
+    "command": [
+      "execute at @a run summon ender_dragon ~ ~ ~"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Saturation Effect",
+    "title": "effect",
+    "command": [
+      "execute at @a run effect give @p saturation 1 255"
+    ],
+    "color": "dark_aqua"
+  },
+  {
+    "subtitle": "Fill with Lava",
+    "title": "fill",
+    "command": [
+      "execute at @a run fill ~-10 ~-10 ~-10 ~10 ~10 ~10 minecraft:lava",
+      "execute at @a run fill ~-1 ~-1 ~-6 ~1 ~1 ~1 minecraft:air"
+    ],
+    "color": "blue"
+  },
+  {
+    "subtitle": "Summon Wither Skeleton near Skeletons",
+    "title": "summon",
+    "command": [
+      "execute at @p run execute as @e[type=skeleton] at @s run summon wither_skeleton ~ ~ ~"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Teleport Ghasts Upward",
+    "title": "teleport",
+    "command": [
+      "execute at @a run tp @e[type=ghast] ~ ~200 ~"
+    ],
+    "color": "gold"
+  },
+  {
+    "subtitle": "Teleport Zombies Upward",
+    "title": "teleport",
+    "command": [
+      "execute at @p run execute as @e[type=zombie] at @s run tp @s ~ ~50 ~"
+    ],
+    "color": "gold"
+  },
+  {
+    "subtitle": "Fill with End Portal Blocks",
+    "title": "fill",
+    "command": [
+      "execute at @a run fill ~-5 ~ ~-5 ~5 ~ ~5 minecraft:end_portal",
+      "execute at @a run fill ~-1 ~-6 ~-1 ~6 ~1 ~1 minecraft:air"
+    ],
+    "color": "blue"
+  },
+  {
+    "subtitle": "Summon Lightning Bolt at Player Location",
+    "title": "summon",
+    "command": [
+      "execute as @p at @s run summon lightning_bolt"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Summon Chicken",
+    "title": "summon",
+    "command": [
+      "execute at @a run summon chicken ~ ~ ~"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Jump Boost Effect",
+    "title": "effect",
+    "command": [
+      "execute at @a run effect give @p jump_boost !RANDOM %RANDOM"
+    ],
+    "color": "dark_aqua"
+  },
+  {
+    "subtitle": "Fill with Water",
+    "title": "fill",
+    "command": [
+      "execute at @a run fill ~-10 ~-10 ~-10 ~10 ~10 ~10 minecraft:water"
+    ],
+    "color": "blue"
+  },
+  {
+    "subtitle": "Give good loot",
+    "title": "jackpot!",
+    "command": [
+      "give @a minecraft:netherite_pickaxe",
+      "give @a minecraft:shield",
+      "give @a minecraft:elytra",
+      "give @a minecraft:firework_rocket !RANDOM",
+      "give @a minecraft:netherite_leggings",
+      "give @a minecraft:netherite_chestplate",
+      "give @a minecraft:netherite_boots",
+      "give @a minecraft:netherite_helmet",
+      "give @a minecraft:netherite_sword"
+    ],
+    "color": "purple"
+  },
+  {
+    "subtitle": "Summon Wolf near Cows",
+    "title": "summon",
+    "command": [
+      "execute at @p run execute as @e[type=cow] at @s run summon wolf ~ ~ ~"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Teleport Sheep Upward",
+    "title": "teleport",
+    "command": [
+      "execute at @a run summon sheep ~ ~ ~",
+      "execute at @p run tp @e[type=sheep] ~ ~10 ~ "
+    ],
+    "color": "gold"
+  },
+  {
+    "subtitle": "Give  Diamond Chestplate",
+    "title": "give",
+    "command": [
+      "execute at @p run give @p minecraft:diamond_chestplate"
+    ],
+    "color": "lime"
+  },
+  {
+    "subtitle": "Teleport Spiders Eastward",
+    "title": "teleport",
+    "command": [
+      "execute at @a run summon spider ~ ~ ~",
+      "execute at @p run execute as @e[type=spider] at @s run tp @s ~50 ~ ~"
+    ],
+    "color": "gold"
+  },
+  {
+    "subtitle": "Fill with TNT",
+    "title": "fill",
+    "command": [
+      "execute at @a run fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:tnt"
+    ],
+    "color": "blue"
+  },
+  {
+    "subtitle": "Witch Spell Particle Effect",
+    "title": "particle",
+    "command": [
+      "execute at @p run particle minecraft:witch_spell ~ ~ ~"
+    ],
+    "color": "cyan"
+  },
+  {
+    "subtitle": "Summon Primed TNT",
+    "title": "summon",
+    "command": [
+      "execute as @a at @s run summon tnt ~ ~ ~"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Summon Zombie",
+    "title": "summon",
+    "command": [
+      "execute at @a run summon zombie ~ ~ ~"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Regeneration Effect",
+    "title": "effect",
+    "command": [
+      "execute as @a run effect give @s regeneration !RANDOM 5"
+    ],
+    "color": "dark_aqua"
+  },
+  {
+    "subtitle": "Fill with Fire",
+    "title": "fill",
+    "command": [
+      "execute at @a run fill ~-10 ~-10 ~-10 ~10 ~10 ~10 minecraft:fire",
+      "execute at @a run fill ~-1 ~10 ~-1 ~1 ~1 ~1 minecraft:air"
+    ],
+    "color": "blue"
+  },
+  {
+    "subtitle": "Fill with Air",
+    "title": "fill",
+    "command": [
+      "execute at @a run fill ~-10 ~-10 ~-10 ~10 ~10 ~10 minecraft:air"
+    ],
+    "color": "blue"
+  },
+  {
+    "subtitle": "Fill with Earth",
+    "title": "fill",
+    "command": [
+      "execute at @a run fill ~-10 ~-10 ~-10 ~10 ~10 ~10 minecraft:dirt",
+      "execute at @a run fill ~-1 ~-2 ~-1 ~2 ~1 ~1 minecraft:air"
+    ],
+    "color": "blue"
+  },
+  {
+    "subtitle": "Summon Zombie Pigman near Cows",
+    "title": "summon",
+    "command": [
+      "execute as @p at @s run summon minecraft:cow ~10 ~ ~10",
+      "execute as @e[type=cow] at @s run summon zombie_pigman ~ ~ ~"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Teleport Cows Upward",
+    "title": "teleport",
+    "command": [
+      "execute as @p at @s run summon minecraft:cow ~ ~ ~",
+      "execute at @p run tp @e[type=cow] ~ ~ ~50"
+    ],
+    "color": "gold"
+  },
+  {
+    "subtitle": "Give 10 Diamond Boots",
+    "title": "give",
+    "command": [
+      "execute at @p run give @p minecraft:diamond_boots 10"
+    ],
+    "color": "lime"
+  },
+  {
+    "subtitle": "Teleport Sheep Upward",
+    "title": "teleport",
+    "command": [
+      "execute at @p run execute as @e[type=sheep] at @s run tp @s ~ ~20 ~"
+    ],
+    "color": "gold"
+  },
+  {
+    "subtitle": "Fill with Campfire Blocks",
+    "title": "fill",
+    "command": [
+      "execute at @a run fill ~-5 ~-1 ~-5 ~5 ~1 ~5 minecraft:campfire[facing=north]"
+    ],
+    "color": "blue"
+  },
+  {
+    "subtitle": "Summon Primed TNT",
+    "title": "summon",
+    "command": [
+      "execute as @p at @s run summon minecraft:tnt ~ ~ ~"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Summon Pig",
+    "title": "summon",
+    "command": [
+      "execute at @a run summon pig ~ ~ ~",
+      "attribute @r[name=pig] minecraft:generic.scale base set !LVL"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Night Vision Effect",
+    "title": "effect",
+    "command": [
+      "execute at @a run effect give @a night_vision !RANDOM 5"
+    ],
+    "color": "dark_aqua"
+  },
+  {
+    "subtitle": "Fill with Redstone Blocks",
+    "title": "fill",
+    "command": [
+      "execute at @a run fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:redstone_block",
+      "execute at @a run fill ~-1 ~-6 ~-1 ~6 ~1 ~1 minecraft:air"
+    ],
+    "color": "blue"
+  },
+  {
+    "subtitle": "Summon Ocelot near Parrots",
+    "title": "summon",
+    "command": [
+      "execute at @p run execute as @e[type=parrot] at @s run summon ocelot ~ ~ ~"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Teleport Cats Upward",
+    "title": "teleport",
+    "command": [
+      "execute at @p run tp @e[type=ocelot] ~ ~!LVL ~"
+    ],
+    "color": "gold"
+  },
+  {
+    "subtitle": "Give Diamond Helmet",
+    "title": "give",
+    "command": [
+      "execute at @p run give @p minecraft:diamond_helmet !LVL"
+    ],
+    "color": "lime"
+  },
+  {
+    "subtitle": "Teleport Parrots Upward",
+    "title": "teleport",
+    "command": [
+      "execute at @p run execute as @e[type=parrot] at @s run tp @s ~ ~20 ~"
+    ],
+    "color": "gold"
+  },
+  {
+    "subtitle": "Fill with Nether Portal Blocks",
+    "title": "fill",
+    "command": [
+      "execute at @a run fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:nether_portal"
+    ],
+    "color": "blue"
+  },
+  {
+    "subtitle": "Summon Horse",
+    "title": "summon",
+    "command": [
+      "execute at @a run summon horse ~ ~ ~",
+      "attribute @r[name=horse] minecraft:generic.scale base set !LVL"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Water Breathing Effect",
+    "title": "effect",
+    "command": [
+      "execute at @a run effect give @p water_breathing !RANDOM !LVL"
+    ],
+    "color": "dark_aqua"
+  },
+  {
+    "subtitle": "Fill with Netherrack",
+    "title": "fill",
+    "command": [
+      "execute at @a run fill ~-10 ~-10 ~-10 ~10 ~10 ~10 minecraft:netherrack",
+      "execute at @a run fill ~-1 ~-2 ~-1 ~6 ~1 ~1 minecraft:air"
+    ],
+    "color": "blue"
+  },
+  {
+    "subtitle": "Summon Skeleton Horse near Skeletons",
+    "title": "summon",
+    "command": [
+      "execute at @a run execute as @e[type=skeleton] at @s run summon skeleton_horse ~ ~ ~"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Teleport Chickens Eastward",
+    "title": "teleport",
+    "command": [
+      "execute at @p run execute as @e[type=chicken] at @s run tp @s ~!RANDOM ~ ~"
+    ],
+    "color": "gold"
+  },
+  {
+    "subtitle": "Fill with End Rods",
+    "title": "fill",
+    "command": [
+      "execute at @a run fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:end_rod"
+    ],
+    "color": "blue"
+  },
+  {
+    "subtitle": "Summon Blaze",
+    "title": "summon",
+    "command": [
+      "execute at @a run summon blaze ~ ~ ~",
+      "attribute @r[name=blaze] minecraft:generic.scale base set !LVL"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Speed Effect",
+    "title": "effect",
+    "command": [
+      "execute at @a run effect give @p speed !RANDOM !LVL"
+    ],
+    "color": "dark_aqua"
+  },
+  {
+    "subtitle": "Fill with Obsidian",
+    "title": "fill",
+    "command": [
+      "execute at @a run fill ~-5 ~-2 ~-5 ~5 ~5 ~5 minecraft:obsidian",
+      "execute at @a run fill ~-1 ~-1 ~-6 ~1 ~1 ~1 minecraft:air"
+    ],
+    "color": "blue"
+  },
+  {
+    "subtitle": "Summon Witch",
+    "title": "summon",
+    "command": [
+      "execute at @a run summon witch ~ ~ ~"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Teleport Player Westward",
+    "title": "teleport",
+    "command": [
+      "execute at @p run tp @p ~-!RANDOM ~ ~"
+    ],
+    "color": "gold"
+  },
+  {
+    "subtitle": "Blindness Effect",
+    "title": "effect",
+    "command": [
+      "execute at @a run effect give @a blindness !RANDOM 1"
+    ],
+    "color": "dark_aqua"
+  },
+  {
+    "subtitle": "Clone Structure",
+    "title": "clone",
+    "command": [
+      "execute at @p run clone ~-20 ~-20 ~-20 ~20 ~20 ~20 ~-40 ~-40 ~-40"
+    ],
+    "color": "white"
+  },
+  {
+    "subtitle": "Summon Ghast",
+    "title": "summon",
+    "command": [
+      "execute at @a run summon ghast ~ ~ ~"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Instant Health Effect",
+    "title": "effect",
+    "command": [
+      "execute at @a run effect give @p instant_health 1 !RANDOM"
+    ],
+    "color": "dark_aqua"
+  },
+  {
+    "subtitle": "Fill with Snow Blocks",
+    "title": "fill",
+    "command": [
+      "execute at @a run fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:snow_block",
+      "execute at @a run fill ~-1 ~-6 ~-1 ~6 ~1 ~1 minecraft:air"
+    ],
+    "color": "blue"
+  },
+  {
+    "subtitle": "Summon Stray near Snow Golems",
+    "title": "summon",
+    "command": [
+      "execute at @p run execute as @e[type=snow_golem] at @s run summon stray ~ ~ ~"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Teleport Skeletons Downward",
+    "title": "teleport",
+    "command": [
+      "execute at @p run tp @e[type=skeleton] ~ ~-!RANDOM ~"
+    ],
+    "color": "gold"
+  },
+  {
+    "subtitle": "Teleport Villagers Eastward",
+    "title": "teleport",
+    "command": [
+      "execute at @p run execute as @e[type=villager] at @s run tp @s ~!RANDOM ~ ~"
+    ],
+    "color": "gold"
+  },
+  {
+    "subtitle": "Fill with Sand Blocks",
+    "title": "fill",
+    "command": [
+      "execute at @a run fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:sand",
+      "execute at @a run fill ~-1 ~-1 ~-1 ~1 ~1 ~1 minecraft:air"
+    ],
+    "color": "blue"
+  },
+  {
+    "subtitle": "Summon Snow Golem",
+    "title": "summon",
+    "command": [
+      "execute at @a run summon snow_golem ~ ~ ~",
+      "attribute @r[name=horse] minecraft:generic.scale base set !LVL"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Strength Effect",
+    "title": "effect",
+    "command": [
+      "execute at @a run effect give @a strength !RANDOM 5"
+    ],
+    "color": "dark_aqua"
+  },
+  {
+    "subtitle": "Fill with Emerald Blocks",
+    "title": "fill",
+    "command": [
+      "execute at @a run fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:emerald_block",
+      "execute at @a run fill ~-1 ~-6 ~-6 ~1 ~1 ~1 minecraft:air"
+    ],
+    "color": "blue"
+  },
+  {
+    "subtitle": "Summon Pillager",
+    "title": "summon",
+    "command": [
+      "execute at @a run summon pillager ~ ~ ~"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Instant Damage Effect",
+    "title": "effect",
+    "command": [
+      "execute at @a run effect give @a instant_damage 1 !RANDOM"
+    ],
+    "color": "dark_aqua"
+  },
+  {
+    "subtitle": "Fill with Gravel",
+    "title": "fill",
+    "command": [
+      "execute at @a run fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:gravel",
+      "execute at @a run fill ~-1 ~-1 ~-1 ~6 ~1 ~1 minecraft:air"
+    ],
+    "color": "blue"
+  },
+  {
+    "subtitle": "Summon Evoker near Vindicators",
+    "title": "summon",
+    "command": [
+      "execute at @p run execute as @e[name=vindicator] at @s run summon evoker ~ ~ ~"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Teleport Spiders Up",
+    "title": "teleport",
+    "command": [
+      "execute at @p run execute as @e[name=spider] at @s run tp @s ~ ~10 ~"
+    ],
+    "color": "gold"
+  },
+  {
+    "subtitle": "Teleport Cats Westward",
+    "title": "teleport",
+    "command": [
+      "execute at @p run execute as @e[type=ocelot] at @s run tp @s ~-10 ~ ~"
+    ],
+    "color": "gold"
+  },
+  {
+    "subtitle": "Fill with End Stone",
+    "title": "fill",
+    "command": [
+      "execute at @a run fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:end_stone",
+      "execute at @a run fill ~-1 ~-1 ~-6 ~1 ~1 ~1 minecraft:air"
+    ],
+    "color": "blue"
+  },
+  {
+    "subtitle": "Summon Vindicator",
+    "title": "summon",
+    "command": [
+      "execute at @a run summon vindicator ~ ~ ~"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Instant Health II Effect",
+    "title": "effect",
+    "command": [
+      "execute at @a run effect give @p instant_health 1 !RANDOM true"
+    ],
+    "color": "dark_aqua"
+  },
+  {
+    "subtitle": "Fill with Packed Ice",
+    "title": "fill",
+    "command": [
+      "execute at @a run fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:packed_ice",
+      "execute at @a run fill ~-1 ~-1 ~-1 ~6 ~1 ~1 minecraft:air"
+    ],
+    "color": "blue"
+  },
+  {
+    "subtitle": "Summon Ravager",
+    "title": "summon",
+    "command": [
+      "execute at @a run summon ravager ~ ~ ~",
+      "attribute @r[name=raveger] minecraft:generic.scale base set !LVL"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Teleport Illagers Upward",
+    "title": "teleport",
+    "command": [
+      "execute at @p run tp @e[type=illager] ~ ~50 ~"
+    ],
+    "color": "gold"
+  },
+  {
+    "subtitle": "Give Fire Resistance Effect",
+    "title": "effect",
+    "command": [
+      "execute at @a run effect give @p fire_resistance !RANDOM 5"
+    ],
+    "color": "dark_aqua"
+  },
+  {
+    "subtitle": "Fill with Sea Lanterns",
+    "title": "fill",
+    "command": [
+      "execute at @a run fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:sea_lantern",
+      "execute at @a run fill ~-1 ~-1 ~-6 ~1 ~1 ~1 minecraft:air"
+    ],
+    "color": "blue"
+  },
+  {
+    "subtitle": "Summon Shulker",
+    "title": "summon",
+    "command": [
+      "execute at @a run summon shulker ~ ~ ~"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Jump Boost II Effect",
+    "title": "effect",
+    "command": [
+      "execute at @a run effect give @p jump_boost !RANDOM 10 true"
+    ],
+    "color": "dark_aqua"
+  },
+  {
+    "subtitle": "Fill with Prismarine",
+    "title": "fill",
+    "command": [
+      "execute at @r run fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:prismarine",
+      "execute at @a run fill ~-1 ~-6 ~-1 ~6 ~1 ~1 minecraft:air"
+    ],
+    "color": "blue"
+  },
+  {
+    "subtitle": "Summon Silverfish near Stone Blocks",
+    "title": "summon",
+    "command": [
+      "execute at @p run execute as @e[type=stone] at @s run summon silverfish ~ ~ ~"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Teleport Endermen Downward",
+    "title": "teleport",
+    "command": [
+      "execute at @p run tp @e[type=enderman] ~ ~-50 ~"
+    ],
+    "color": "gold"
+  },
+  {
+    "subtitle": "Teleport Villagers Southward",
+    "title": "teleport",
+    "command": [
+      "execute at @p run execute as @e[type=villager] at @s run tp @s ~ ~ ~50"
+    ],
+    "color": "gold"
+  },
+  {
+    "subtitle": "Fill with Sponge Blocks",
+    "title": "fill",
+    "command": [
+      "execute at @a run fill ~-5 ~-5 ~-5 ~5 ~5 ~5 minecraft:sponge"
+    ],
+    "color": "blue"
+  },
+  {
+    "subtitle": "Summon Silverfish",
+    "title": "summon",
+    "command": [
+      "execute at @a run summon silverfish ~ ~ ~"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Create Ancient City",
+    "title": "structure",
+    "command": [
+      "execute at @a run place structure minecraft:ancient_city"
+    ],
+    "color": "orange"
+  },
+  {
+    "subtitle": "Create Bastion",
+    "title": "structure",
+    "command": [
+      "execute at @a run place structure minecraft:bastion_remnant"
+    ],
+    "color": "orange"
+  },
+  {
+    "subtitle": "Create Pyramid",
+    "title": "structure",
+    "command": [
+      "execute at @a run place structure minecraft:desert_pyramid"
+    ],
+    "color": "orange"
+  },
+  {
+    "subtitle": "Create End City",
+    "title": "structure",
+    "command": [
+      "execute at @a run place structure minecraft:end_city"
+    ],
+    "color": "orange"
+  },
+  {
+    "subtitle": "Create Fortress",
+    "title": "structure",
+    "command": [
+      "execute at @a run place structure minecraft:fortress"
+    ],
+    "color": "orange"
+  },
+  {
+    "subtitle": "Create Igloo",
+    "title": "structure",
+    "command": [
+      "execute at @a run place structure minecraft:igloo"
+    ],
+    "color": "orange"
+  },
+  {
+    "subtitle": "Create Pyramid",
+    "title": "structure",
+    "command": [
+      "execute at @a run place structure minecraft:jungle_pyramid"
+    ],
+    "color": "orange"
+  },
+  {
+    "subtitle": "Create Mansion",
+    "title": "structure",
+    "command": [
+      "execute at @a run place structure minecraft:mansion"
+    ],
+    "color": "orange"
+  },
+  {
+    "subtitle": "Create Outpost",
+    "title": "structure",
+    "command": [
+      "execute at @a run place structure minecraft:pillager_outpost"
+    ],
+    "color": "orange"
+  },
+  {
+    "subtitle": "Create Ruined Portal",
+    "title": "structure",
+    "command": [
+      "execute at @a run place structure minecraft:ruined_portal"
+    ],
+    "color": "orange"
+  },
+  {
+    "subtitle": "Create Stronghold",
+    "title": "structure",
+    "command": [
+      "execute at @a run place structure minecraft:stronghold"
+    ],
+    "color": "orange"
+  },
+  {
+    "subtitle": "Summon Lightning Strikes",
+    "title": "summon",
+    "command": [
+      "execute at @a run summon minecraft:lightning_bolt",
+      "execute at @a run summon minecraft:lightning_bolt",
+      "execute at @a run summon minecraft:lightning_bolt"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Set Players on Fire",
+    "title": "effect",
+    "command": [
+      "execute at @a run effect give @s minecraft:fire_resistance 1 1 true"
+    ],
+    "color": "dark_aqua"
+  },
+  {
+    "subtitle": "Teleport Players to Random Locations",
+    "title": "teleport",
+    "command": [
+      "execute as @a run execute in minecraft:overworld run tp @s ~ ~!RANDOM ~"
+    ],
+    "color": "gold"
+  },
+  {
+    "subtitle": "Summon Explosive Sheep",
+    "title": "summon",
+    "command": [
+      "execute at @a run summon minecraft:sheep ~ ~ ~ {Fuse:20}",
+      "execute at @a run summon minecraft:sheep ~ ~ ~ {Fuse:20}",
+      "execute at @a run summon minecraft:sheep ~ ~ ~ {Fuse:20}"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Apply Levitation Effect",
+    "title": "effect",
+    "command": [
+      "execute as @a run effect give @s minecraft:levitation 1 1 true"
+    ],
+    "color": "dark_aqua"
+  },
+  {
+    "subtitle": "Spawn Angry Wolves",
+    "title": "summon",
+    "command": [
+      "execute at @a run summon minecraft:wolf ~ ~ ~ {Angry:1}"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Blind Players",
+    "title": "effect",
+    "command": [
+      "execute as @a run effect give @s minecraft:blindness !RANDOM 1 true"
+    ],
+    "color": "dark_aqua"
+  },
+  {
+    "subtitle": "Teleport Players to Void",
+    "title": "teleport",
+    "command": [
+      "execute as @a run tp @s ~ -64 ~"
+    ],
+    "color": "gold"
+  },
+  {
+    "subtitle": "Apply Confusion Effect",
+    "title": "effect",
+    "command": [
+      "execute as @a run effect give @s minecraft:nausea !LVL 1 true"
+    ],
+    "color": "dark_aqua"
+  },
+  {
+    "subtitle": "Apply Slowness Effect",
+    "title": "effect",
+    "command": [
+      "execute at @a run effect give @s minecraft:slowness !LVL 1 true"
+    ],
+    "color": "dark_aqua"
+  },
+  {
+    "subtitle": "Summon Exploding Creepers",
+    "title": "summon",
+    "command": [
+      "execute at @a run summon minecraft:creeper ~ ~ ~ {Fuse:20}"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Teleport Players to Random Coordinates",
+    "title": "teleport",
+    "command": [
+      "execute as @a run tp @s ~!RANDOM ~!LVL ~%RANDOM"
+    ],
+    "color": "gold"
+  },
+  {
+    "subtitle": "Apply Poison Effect",
+    "title": "effect",
+    "command": [
+      "execute as @a run effect give @s minecraft:poison !RANDOM 1 true"
+    ],
+    "color": "dark_aqua"
+  },
+  {
+    "subtitle": "Summon Charging Endermen",
+    "title": "summon",
+    "command": [
+      "execute at @a run summon minecraft:enderman ~ ~ ~ {AngerTime:200}"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Teleport Players to Sky Limit",
+    "title": "teleport",
+    "command": [
+      "execute as @a run tp @s ~ 256 ~"
+    ],
+    "color": "gold"
+  },
+  {
+    "subtitle": "Apply Mining Fatigue Effect",
+    "title": "effect",
+    "command": [
+      "effect give @a minecraft:mining_fatigue !LVL 1 true"
+    ],
+    "color": "dark_aqua"
+  },
+  {
+    "subtitle": "Summon Giant Spiders",
+    "title": "summon",
+    "command": [
+      "execute at @a run summon minecraft:spider ~ ~ ~ {Size:6}"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Apply Weakness Effect",
+    "title": "effect",
+    "command": [
+      "execute as @a run effect give @s minecraft:weakness !RANDOM 1 true"
+    ],
+    "color": "dark_aqua"
+  },
+  {
+    "subtitle": "Summon Explosive Skeletons",
+    "title": "summon",
+    "command": [
+      "execute at @a run summon minecraft:skeleton ~ ~ ~ {Fuse:20}"
+    ],
+    "color": "green"
+  },
+  {
+    "subtitle": "Change to Creative Mode",
+    "title": "gamemode",
+    "command": [
+      "gamemode creative @a",
+      "!SLEEP",
+      "gamemode survival @a"
+    ],
+    "color": "yellow"
+  },
+  {
+    "subtitle": "Change to Adventure Mode",
+    "title": "gamemode",
+    "command": [
+      "gamemode adventure @a",
+      "!SLEEP",
+      "gamemode survival @a"
+    ],
+    "color": "yellow"
+  },
+  {
+    "subtitle": "Change to Spectator Mode",
+    "title": "gamemode",
+    "command": [
+      "gamemode spectator @a",
+      "!SLEEP",
+      "gamemode survival @a"
+    ],
+    "color": "yellow"
+  },
+  {
+    "subtitle": "Mystery Box Teleport",
+    "title": "teleport",
+    "command": [
+      "spreadplayers ~ ~ 0 1000 false @a"
+    ],
+    "color": "gold"
+  },
+  {
+    "subtitle": "Disco Party",
+    "title": "effect",
+    "command": [
+      "execute as @a run execute as @s run replaceitem entity @s armor.head minecraft:leather_helmet{display:{color:16777215}}",
+      "execute as @a run execute as @s run replaceitem entity @s armor.chest minecraft:leather_chestplate{display:{color:16711680}}",
+      "execute as @a run execute as @s run replaceitem entity @s armor.legs minecraft:leather_leggings{display:{color:65280}}",
+      "execute as @a run execute as @s run replaceitem entity @s armor.feet minecraft:leather_boots{display:{color:255}}"
+    ],
+    "color": "dark_aqua"
+  },
+  {
+    "subtitle": "Reverse Gravity",
+    "title": "effect",
+    "command": [
+      "effect give @a minecraft:levitation !RANDOM 1 true"
+    ],
+    "color": "dark_aqua"
+  },
+  {
+    "subtitle": "Crazy Combo",
+    "title": "effect",
+    "command": [
+      "effect give @a minecraft:levitation !RANDOM 1 true",
+      "effect give @a minecraft:health_boost !RANDOM !LVL true",
+      "spreadplayers ~ ~ 0 !RANDOM false @a"
+    ],
+    "color": "dark_aqua"
+  },
+  {
+    "subtitle": "Flying Undead Jockeys",
+    "title": "effect",
+    "command": [
+      "execute as @a run summon minecraft:chicken ~ ~1 ~ {Passengers:[{id:\"minecraft:zombie\",IsBaby:1}]}",
+      "effect give @e[type=minecraft:chicken]  minecraft:levitation 99 1 true"
+    ],
+    "color": "dark_aqua"
+  },
+  {
+    "subtitle": "Keep Inventory",
+    "title": "gamemode",
+    "command": [
+      "gamerule keepInventory true"
+    ],
+    "color": "yellow"
+  },
+  {
+    "subtitle": "Lose Inventory",
+    "title": "gamemode",
+    "command": [
+      "gamerule keepInventory false"
+    ],
+    "color": "aqua"
+  },
+  {
+    "subtitle": "Clear Weather",
+    "title": "weather",
+    "command": [
+      "weather clear"
+    ],
+    "color": "aqua"
+  },
+  {
+    "subtitle": "Rain",
+    "title": "weather",
+    "command": [
+      "weather rain"
+    ],
+    "color": "aqua"
+  },
+  {
+    "subtitle": "Thunderstorm",
+    "title": "weather",
+    "command": [
+      "weather thunder"
+    ],
+    "color": "aqua"
+  },
+  {
+    "subtitle": "Set Time to Day",
+    "title": "time",
+    "command": [
+      "time set noon"
+    ],
+    "color": "aqua"
+  },
+  {
+    "subtitle": "Set Time to Night",
+    "title": "time",
+    "command": [
+      "time set midnight"
+    ],
+    "color": "aqua"
+  },
+  {
+    "subtitle": "A Clear Day",
+    "title": "weather",
+    "command": [
+      "weather clear",
+      "time set noon"
+    ],
+    "color": "aqua"
+  },
+  {
+    "subtitle": "A cold night",
+    "title": "weather",
+    "command": [
+      "weather rain",
+      "time set midnight"
+    ],
+    "color": "aqua"
+  },
+  {
+    "subtitle": "A summer storm",
+    "title": "weather",
+    "command": [
+      "weather thunder",
+      "time set noon"
+    ],
+    "color": "aqua"
+  },
+  {
+    "subtitle": "A dark and stormy night...",
+    "title": "weather",
+    "command": [
+      "weather thunder",
+      "time set midnight"
+    ],
+    "color": "aqua"
+  },
+  {
+    "subtitle": "Set Difficulty to Peaceful",
+    "title": "gamemode",
+    "command": [
+      "difficulty peaceful"
+    ],
+    "color": "yellow"
+  },
+  {
+    "subtitle": "Set Difficulty to Easy",
+    "title": "gamemode",
+    "command": [
+      "difficulty easy"
+    ],
+    "color": "yellow"
+  },
+  {
+    "subtitle": "Set Difficulty to Normal",
+    "title": "gamemode",
+    "command": [
+      "difficulty normal"
+    ],
+    "color": "yellow"
+  },
+  {
+    "subtitle": "Set Difficulty to Hard",
+    "title": "gamemode",
+    "command": [
+      "difficulty hard"
+    ],
+    "color": "yellow"
+  }
+]

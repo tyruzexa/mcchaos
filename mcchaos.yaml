@@ -1,0 +1,66 @@
+ - name: set up the service for minecraft chaos
+   hosts: sfftwo
+   vars_files:
+    - vars.yaml
+   tasks:
+   - name: Creates Chaos  Directory
+     ansible.builtin.file:
+        path: "{{chaos_path}}"
+        state: directory
+   - name: Creates Service Directory
+     ansible.builtin.file:
+        path: ~/.config/systemd/user/
+        state: directory
+   - name: install the Startup Service File
+     template:
+       src: systemd/mcchaossetup.service.j2
+       dest: ~/.config/systemd/user/mcchaossetup.service
+   - name: install the timer File
+     template:
+       src: systemd/mcchaos.timer.j2
+       dest: ~/.config/systemd/user/mcchaos.timer
+   - name: install the Startup Service File
+     template:
+       src: systemd/mcchaos.service.j2
+       dest: ~/.config/systemd/user/mcchaos.service
+   - name: Install the commands json
+     copy:
+       src: randomcommands.json
+       dest: "{{ chaos_path }}/randomcommands.json"
+   - name: Install the env file
+     template:
+       src: systemd/env.conf.j2
+       dest: "{{ chaos_path }}/env.conf"
+   - name: Install the token script
+     copy:
+       src: calctoken.sh
+       dest: "{{ chaos_path }}/calctoken.sh"
+   - name: Install the main script
+     copy:
+       src: mccmd.sh
+       dest: "{{ chaos_path }}/mccmd.sh"       
+
+   - name: Install CGI scripts
+     become: true
+     template:
+       src: "www/cgi-bin/{{ item }}"
+       dest: "{{ cweb_root }}/cgi-bin/"
+     loop:
+      - chaosmode.py
+      - get-options.py
+   - name: Install HTML Files
+     become: true
+     copy:
+       src: "www/html/{{ item }}"
+       dest: "{{ cweb_root }}/html/"
+     loop:
+      - index.html
+      - script.js
+      - styles.css
+      - power_charge_a.wav
+   - name: Restart States servces
+     systemd:
+       state: stopped
+       daemon_reload: true
+       name: mcchaos.service
+       scope: user
