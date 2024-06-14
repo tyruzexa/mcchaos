@@ -45,4 +45,6 @@ You'll need to specify the full UUID path to the server you want to use. In prin
 
 There is also a simple webpage with some custom CSS and Javascript that will render a spinner that will make it a little more fun. Use case we tried was having a second screen display the spinner while we played the game. It certainly made for a more exciting experience.
 
-The webpage is totally optional, and once you have the environment variables all setup, you could also simply run the mcchaos.sh 
+The webpage is totally optional, and once you have the environment variables all setup, you could also simply run the mccmd.sh.  this command will write to a specified path a very simple file containing the command selected so the webpage knows which spinner to land on.  This is probably very insecure, so do be careful.
+
+There is also a webpage that was intened to enable and disable the chaosmode systemd timer, but I haven't really tried to get that working.
