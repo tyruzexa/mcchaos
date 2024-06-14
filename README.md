@@ -2,6 +2,10 @@
 
 In order to use this, you'll need a server running with Crafty Controller.  The commands wwe have here are tailored for java, but all of the code here will work no matter whether you are using vanilla, java, bedrock, or moded servers.
 
+
+Watch our world premier of playing using this mod here:
+https://youtu.be/H7RnQxlut28
+
 to get full effect, you'll need the following:
 
 ## Environment
